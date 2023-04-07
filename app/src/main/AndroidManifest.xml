@@ -11,5 +11,17 @@
             android:label="@string/app_name"
             android:icon="@mipmap/ic_launcher"
             android:supportsRtl="true"
-            android:theme="@style/Theme.ShortActions"/>
+            android:theme="@style/Theme.ShortActions">
+
+        <activity android:name="com.kulesko.shortactions.ActionsManager" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+
+    </application>
+
 </manifest>

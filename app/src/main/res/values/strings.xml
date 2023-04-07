@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">shortActions</string>
+    <string name="syncThingS">Stop sync</string>
 </resources>
