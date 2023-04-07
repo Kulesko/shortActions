@@ -1,7 +1,7 @@
 package com.kulesko.shortactions
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 
 class ActionsManager : AppCompatActivity() {
@@ -9,11 +9,15 @@ class ActionsManager : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        if (intent.action == "com.kulesko.shortactions.dosomething") doSomething()
+        if (intent.action == "com.kulesko.shortactions.dosomething") sendBroadcast()
     }
 
-    private fun doSomething() {
-        Log.println(Log.ERROR, null, "did something but no idea what")
+    private fun sendBroadcast() {
+        Intent().also { intent ->
+            intent.setAction("com.nutomic.syncthingandroid.action.STOP")
+            intent.setPackage("com.nutomic.syncthingandroid")
+            sendBroadcast(intent)
+        }
     }
 
 }
