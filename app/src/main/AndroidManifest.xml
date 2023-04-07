@@ -13,7 +13,8 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.ShortActions">
 
-        <activity android:name="com.kulesko.shortactions.ActionsManager" android:exported="true">
+        <activity android:name="com.kulesko.shortactions.ActionsManager" android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

@@ -10,6 +10,8 @@ class ActionsManager : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         if (intent.action == "com.kulesko.shortactions.dosomething") sendBroadcast()
+
+        finish()
     }
 
     private fun sendBroadcast() {
