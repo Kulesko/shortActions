@@ -4,4 +4,7 @@
 		<b>Missing any app actions in your automations? Find out what your apps are capable of and map them to versatile shortcuts.</b>
 	</p>
 	<br>
+
+    This project is under development.
+
 </div>
