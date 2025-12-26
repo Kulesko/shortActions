@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.kulesko.shortactions'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.kulesko.shortactions"
         minSdk 28
-        targetSdk 34
+        targetSdk 35
         versionCode 5
         versionName "1.0.5 alpha"
 
